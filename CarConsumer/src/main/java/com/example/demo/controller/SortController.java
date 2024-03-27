@@ -41,6 +41,7 @@ public class SortController {
 	public List<Car> getall(@RequestParam String brand,
 			@RequestParam String fuel, @RequestParam Double price,
 			@RequestParam String transmission){
+		System.out.println("fetched");
 		return service.sortAll(brand, fuel, price,transmission);
 	}
 		
